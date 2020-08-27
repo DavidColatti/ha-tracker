@@ -4,16 +4,16 @@ import Table from "./components/Table";
 
 const data = [
   {
-    spid: "2201920",
-    dateLastSeen: new Date("2020", 1, 10).toLocaleDateString(),
+    spid: "103916594",
+    dateLastSeen: new Date(2020, 8, 26).toLocaleDateString(),
   },
   {
-    spid: "8219207",
-    dateLastSeen: "",
+    spid: "105459844",
+    dateLastSeen: new Date(2020, 8, 25).toLocaleDateString(),
   },
   {
-    spid: "2201123",
-    dateLastSeen: new Date("2020", 3, 1).toLocaleDateString(),
+    spid: "105460417",
+    dateLastSeen: new Date(2020, 8, 25).toLocaleDateString(),
   },
 ];
 

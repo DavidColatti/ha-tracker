@@ -18,8 +18,22 @@ const Table = ({ data }) => {
     if (data) {
       const newData = data.map((each) => ({
         spid: each.spid,
-        notesLink: <a href={`http://www.noteslink.com${each.spid}`}>Notes</a>,
-        bettiLink: <a href={`http://www.bettilink.com${each.spid}`}>Link</a>,
+        notesLink: (
+          <a
+            className="table-link"
+            href={`https://csrtools.servicemagic.com/crm/notes/notesLoad.crm?entityID=${each.spid}&firstLoad=true&offset=undefined`}
+          >
+            Notes
+          </a>
+        ),
+        bettiLink: (
+          <a
+            className="table-link"
+            href={`https://csrtools.servicemagic.com/crm/user/callTracker.crm?destinationPage=/summary/summary.crm&entityID=${each.spid}&checkMarketingQuestion=true`}
+          >
+            Link
+          </a>
+        ),
         dateLastSeen: <input value={each.dateLastSeen} />,
         prospectDate: sevenDaysOut(each.dateLastSeen),
         deleteBtn: (
